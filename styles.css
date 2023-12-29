@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./img/fondo.jpeg') center/cover fixed no-repeat; /* Cambia 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #1c2331; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-container img {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+    margin-right: 10px;
+}
+
+.cta-container {
+    margin: 20px 0;
+}
+
+.description-container {
+    border: 2px solid #d9534f; /* Borde rojo */
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes suavizados */
+}
+
+.description {
+    max-width: 600px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 30px 60px; /* Aumenta el padding para hacer el botón más grande */
+    font-size: 40px; /* Aumenta el tamaño de la fuente */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f; /* Rojo */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c9302c; /* Rojo oscuro en hover */
+}
+
+
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes suavizados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.disclaimer {
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8d7da; /* Fondo rojo claro para resaltar el disclaimer */
+    color: #721c24; /* Texto oscuro para resaltar el disclaimer */
+    border: 1px solid #f5c6cb; /* Borde rojo para resaltar el disclaimer */
+    border-radius: 5px;
+}
