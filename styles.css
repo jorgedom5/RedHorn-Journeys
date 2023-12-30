@@ -16,6 +16,32 @@ header {
     width: 100%;
 }
 
+nav {
+    background-color: #1c2331; /* Cambiado el color de fondo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 15px; /* Ajusta el espaciado entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}
+
 .logo-container img {
     width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
     height: auto;
@@ -88,10 +114,20 @@ button {
 
 .prev {
     left: 10px;
+    border: 2px solid #d9534f; /* Borde rojo */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #d9534f; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 5px 10px; /* Ajusta según sea necesario */
 }
 
 .next {
     right: 10px;
+    border: 2px solid #d9534f; /* Borde rojo */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #d9534f; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 5px 10px; /* Ajusta según sea necesario */
 }
 
 .disclaimer {
@@ -103,4 +139,96 @@ button {
     color: #721c24; /* Texto oscuro para resaltar el disclaimer */
     border: 1px solid #f5c6cb; /* Borde rojo para resaltar el disclaimer */
     border-radius: 5px;
+}
+
+.testimonios-container {
+    background-color: #1c2331; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Ajusta el margen según sea necesario */
+    top: 10px;
+}
+
+.testimonios-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonio {
+    background-color: #d9534f; /* Rojo */
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.testimonio h3 {
+    margin-bottom: 10px;
+}
+
+.testimonio p {
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.testimonios-navigation {
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario para el espacio deseado entre los testimonios y los botones */
+}
+
+.testimonios-navigation button {
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c2331; /* Cambia el color de fondo según sea necesario */
+    color: #d9534f; /* Cambia el color del texto según sea necesario */
+}
+
+.destinos-container {
+    background-color: #1c2331; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.destino {
+    margin-bottom: 20px;
+}
+
+.destino h3 {
+    color: #d9534f; /* Rojo */
+}
+
+.destino p {
+    color: #ddd; /* Gris claro */
+}
+
+
+.faq-container {
+    background-color: #1c2331; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    color: #d9534f; /* Azul oscuro */
+}
+
+.question p {
+    color: #ddd; /* Gris claro */
 }

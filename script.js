@@ -1,4 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const testimonios = document.querySelectorAll('.testimonio');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    let currentIndex = 0;
+
+    function showTestimonio(index) {
+        testimonios.forEach(testimonio => testimonio.style.display = 'none');
+        testimonios[index].style.display = 'block';
+    }
+
+    function nextTestimonio() {
+        currentIndex++;
+        if (currentIndex >= testimonios.length) {
+            currentIndex = 0;
+        }
+        showTestimonio(currentIndex);
+    }
+
+    function prevTestimonio() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = testimonios.length - 1;
+        }
+        showTestimonio(currentIndex);
+    }
+
+    nextBtn.addEventListener('click', nextTestimonio);
+    prevBtn.addEventListener('click', prevTestimonio);
+
+    // Muestra el primer testimonio al cargar la página
+    showTestimonio(currentIndex);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.querySelector(".gallery");
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
@@ -8,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showImage(index) {
         const translateValue = -index * 100 + "vw";
-        gallery.style.transition = "transform 0.5s ease-in-out";
+        gallery.style.transition = "transform 0.5s ease"; // Cambiado ease-in-out por ease
         gallery.style.transform = "translateX(" + translateValue + ")";
     }
 
