@@ -232,3 +232,18 @@ button {
 .question p {
     color: #ddd; /* Gris claro */
 }
+
+.about-container {
+    background-color: #1f3057;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.about-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
