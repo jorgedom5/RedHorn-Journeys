@@ -107,7 +107,7 @@ nav a:hover {
     background-color: #d9534f;
 }
 
-.description-container {
+.description-container2 {
     border: 2px solid #d9534f;
     padding: 20px;
     margin: 20px 0;
@@ -115,7 +115,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.description {
+.description2 {
     max-width: 600px;
     text-align: center;
     font-size: 16px;
