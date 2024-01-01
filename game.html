@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHorn Journeys - Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de la Galería">
+        </div>
+        <h1>RedHorn Journeys</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Destinos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonios.html">Testimonios</a></li>
+            <li><a href="about.html">Sobre nosotros</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="wally.html">Juego</a></li>
+            <li><a href="ultimate.html">UltimateBull</a></li>
+            <li><a href="viciosa.html">Tragaperras</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <div class="cta-container">
+        <a href="https://forms.gle/owwBAknLGoQUzPE8A" target="_blank" class="cta-button">¡Inscríbete ya!</a>
+    </div>
+
+    <div class="game-container">
+        <h2>Responde a la pregunta:</h2>
+        <p id="adivinanza"></p>
+        
+        <div class="verificar-container">
+            <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+            <button onclick="verificarRespuesta()">¡Verificar!</button>
+        </div>
+
+        <p id="resultado-texto"></p>
+        <img src="" alt="Imagen de resultado" id="imagen-resultado" style="display: none;">
+    </div>
+
+    <script src="game.js"></script>
+
+    
+    <div class="disclaimer">
+        <p>Disclaimer legal: Este juego es solo con fines ilustrativos y de entretenimiento. Las adivinanzas y las imágenes utilizadas aquí son ficticias y no representan necesariamente situaciones reales. Cualquier similitud con la realidad es pura coincidencia.</p>
+    </div>
+</body>
+</html>

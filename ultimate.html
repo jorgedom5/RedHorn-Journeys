@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHorn Journeys - UltimateBull</title>
+    <link rel="stylesheet" href="stylesu.css"> <!-- Asegúrate de tener un archivo de estilos si es necesario -->
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de la Galería">
+        </div>
+        <h1>RedHorn Journeys</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Destinos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonios.html">Testimonios</a></li>
+            <li><a href="about.html">Sobre nosotros</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="wally.html">Juego</a></li>
+            <li><a href="ultimate.html">UltimateBull</a></li>
+            <li><a href="viciosa.html">Tragaperras</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <div class="cta-container">
+        <a href="https://forms.gle/owwBAknLGoQUzPE8A" target="_blank" class="cta-button">¡Inscríbete ya!</a>
+    </div>
+
+    <div class="intro-ludopatia" id="intro-ludopatia">
+        <p>UltimateBull: El Juego de Cartas" es una emocionante aventura que te sumerge en la fascinante vida de Toro Rojo. A través de cartas coleccionables, explorarás desde su infancia marcada por la adversidad hasta sus hazañas como líder en la industria de datos y viajes. El objetivo es coleccionar todas las cartas para descubrir la esencia única de Toro Rojo y, finalmente, desbloquear la posibilidad de conocerlo en persona. Cada carta representa un episodio significativo de su vida, revelando su destreza en los negocios, su espíritu fiestero, sus romances y su dedicación a la equidad. ¿Estás listo para embarcarte en esta emocionante travesía y convertirte en el maestro coleccionista de UltimateBull? ¡Descúbrelo y conoce al legendario Toro Rojo en carne y hueso!</p>
+    </div>
+
+    <div class="sobre-container" id="sobre-container">
+        <!-- La imagen del sobre se carga dinámicamente al comprar -->
+        <img src="./img/sobre.jpeg" alt="Sobre Cerrado" id="sobre-imagen">
+        <div id="carta-container">
+            <img src="" alt="Imagen de la carta" id="carta-imagen">
+        </div>
+        <p id="carta-descripcion"></p>
+    </div>
+
+    <div class="cta-container">
+        <div class="cartera-container">
+            <p>Tienes <span id="cartera">500</span> monedas en tu cartera.</p>
+        </div>
+        <button onclick="comprarSobre()">Comprar Sobre (100 monedas)</button>
+        <audio id="sonidoCarta" src="./audio/pack.mp3"></audio>
+    </div>
+    
+
+    <script src="ultimate.js"></script> <!-- Crea un archivo JS para la lógica del juego -->
+
+</body>
+</html>

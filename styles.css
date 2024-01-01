@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('./img/fondo.jpeg') center/cover fixed no-repeat; /* Cambia 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+    background: url('./img/fondo.jpeg') center/cover fixed no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    background-color: #1c2331; /* Azul oscuro */
+    background-color: #1c2331;
     color: white;
     padding: 20px;
     text-align: center;
@@ -17,33 +17,35 @@ header {
 }
 
 nav {
-    background-color: #1c2331; /* Cambiado el color de fondo */
+    background-color: #1c2331;
+    width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-}
-
-nav ul li {
     margin: 0;
-    padding: 15px; /* Ajusta el espaciado entre elementos */
+    overflow: hidden;
 }
 
-nav ul li a {
-    text-decoration: none;
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
     color: white;
-    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline; /* Subrayar en hover */
+nav a:hover {
+    background-color: #d9534f;
 }
 
 .logo-container img {
-    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    width: 100px;
     height: auto;
     margin-right: 10px;
 }
@@ -53,11 +55,11 @@ nav ul li a:hover {
 }
 
 .description-container {
-    border: 2px solid #d9534f; /* Borde rojo */
+    border: 2px solid #d9534f;
     padding: 20px;
     margin: 20px 0;
-    background-color: white; /* Fondo blanco */
-    border-radius: 8px; /* Bordes suavizados */
+    background-color: white;
+    border-radius: 8px;
 }
 
 .description {
@@ -70,20 +72,19 @@ nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    padding: 30px 60px; /* Aumenta el padding para hacer el botón más grande */
-    font-size: 40px; /* Aumenta el tamaño de la fuente */
+    padding: 30px 60px;
+    font-size: 40px;
     text-align: center;
     text-decoration: none;
     color: white;
-    background-color: #d9534f; /* Rojo */
+    background-color: #d9534f;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
 }
 
 .cta-button:hover {
-    background-color: #c9302c; /* Rojo oscuro en hover */
+    background-color: #c9302c;
 }
-
 
 .gallery-container {
     position: relative;
@@ -98,36 +99,34 @@ nav ul li a:hover {
 .gallery img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Bordes suavizados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
     font-size: 24px;
     cursor: pointer;
 }
 
 .prev {
     left: 10px;
-    border: 2px solid #d9534f; /* Borde rojo */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #d9534f; /* Fondo rojo */
-    color: white; /* Texto blanco */
-    padding: 5px 10px; /* Ajusta según sea necesario */
+    border: 2px solid #d9534f;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
 }
 
 .next {
     right: 10px;
-    border: 2px solid #d9534f; /* Borde rojo */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #d9534f; /* Fondo rojo */
-    color: white; /* Texto blanco */
-    padding: 5px 10px; /* Ajusta según sea necesario */
+    border: 2px solid #d9534f;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
 }
 
 .disclaimer {
@@ -135,18 +134,18 @@ button {
     margin: 20px 0;
     padding: 10px;
     text-align: center;
-    background-color: #f8d7da; /* Fondo rojo claro para resaltar el disclaimer */
-    color: #721c24; /* Texto oscuro para resaltar el disclaimer */
-    border: 1px solid #f5c6cb; /* Borde rojo para resaltar el disclaimer */
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
     border-radius: 5px;
 }
 
 .testimonios-container {
-    background-color: #1c2331; /* Azul oscuro */
+    background-color: #1c2331;
     color: white;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px; /* Ajusta el margen según sea necesario */
+    margin-top: 20px;
     top: 10px;
 }
 
@@ -157,7 +156,7 @@ button {
 }
 
 .testimonio {
-    background-color: #d9534f; /* Rojo */
+    background-color: #d9534f;
     color: white;
     padding: 15px;
     margin: 10px 0;
@@ -169,27 +168,31 @@ button {
 }
 
 .testimonio p {
-    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    font-size: 14px;
 }
 
 .testimonios-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
     text-align: center;
-    margin-top: 20px; /* Ajusta según sea necesario para el espacio deseado entre los testimonios y los botones */
+    transform: translateY(-50%);
 }
 
 .testimonios-navigation button {
     margin: 0 10px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #1c2331; /* Cambia el color de fondo según sea necesario */
-    color: #d9534f; /* Cambia el color del texto según sea necesario */
+    background-color: #1c2331;
+    color: #d9534f;
 }
 
 .destinos-container {
-    background-color: #1c2331; /* Azul oscuro */
+    background-color: #1c2331;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -203,16 +206,15 @@ button {
 }
 
 .destino h3 {
-    color: #d9534f; /* Rojo */
+    color: #d9534f;
 }
 
 .destino p {
-    color: #ddd; /* Gris claro */
+    color: #ddd;
 }
 
-
 .faq-container {
-    background-color: #1c2331; /* Azul oscuro */
+    background-color: #1c2331;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -226,15 +228,15 @@ button {
 }
 
 .question h3 {
-    color: #d9534f; /* Azul oscuro */
+    color: #d9534f;
 }
 
 .question p {
-    color: #ddd; /* Gris claro */
+    color: #ddd;
 }
 
 .about-container {
-    background-color: #1f3057;
+    background-color: #1c2331;
     color: #fff;
     padding: 20px;
     border-radius: 15px;
@@ -246,4 +248,70 @@ button {
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.game-container {
+    background-color: #1c2331;
+    border-radius: 15px;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#adivinanza {
+    margin-bottom: 20px; /* Añadir margen inferior para separar el texto del input */
+}
+
+
+.verificar-container {
+    margin-top: 10px;
+    background-color: #d9534f;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.verificar-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.verificar-container button:hover {
+    background-color: #c9302c;
+}
+
+#toro-rojo {
+    cursor: pointer;
+}
+
+.waldo {
+    background-color: #1c2331;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.mensaje-container {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
 }

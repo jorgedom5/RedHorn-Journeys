@@ -1,0 +1,159 @@
+/* stylesu.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url('./img/fondo.jpeg') center/cover fixed no-repeat;
+}
+
+header {
+    background-color: #1c2331;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cta-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cartera {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#sobre-imagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#carta-imagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+.intro-ludopatia {
+    background-color: #1c2331;
+    border-radius: 15px;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background-color: #1c2331;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #d9534f;
+}
+
+.cartera-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1c2331; /* Color azul oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.cartera-container p {
+    font-size: 18px;
+    margin: 0;
+    color: white; /* Color del texto */
+}
+
+.cartera-container span {
+    font-weight: bold;
+    color: #d9534f; /* Puedes ajustar el color según tus preferencias */
+}
+
+
+#carta-descripcion {
+    font-size: 16px;
+    margin: 0;
+    color: white; /* Color del texto */
+    background-color: #1c2331;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 30px 60px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c9302c;
+}
+
+#carta-container {
+    opacity: 0; /* Inicialmente, la carta estará invisible */
+    transition: opacity 1s ease-in-out; /* Agrega una transición de 1 segundo */
+}
+
+#carta-container.mostrar {
+    opacity: 1; /* Cuando se añade la clase "mostrar", la carta se vuelve visible */
+}

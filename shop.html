@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHorn Journeys - Tienda</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de la Galería">
+        </div>
+        <h1>RedHorn Journeys</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Destinos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonios.html">Testimonios</a></li>
+            <li><a href="about.html">Sobre nosotros</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="wally.html">Juego</a></li>
+            <li><a href="ultimate.html">UltimateBull</a></li>
+            <li><a href="viciosa.html">Tragaperras</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <section id="shop">
+        <article class="item">
+            <img src="./img/peluche.jpeg" alt="Peluche de Toro Rojo">
+            <h2>Peluche de Toro Rojo</h2>
+            <p class="price">50.00 €</p>
+            <button onclick="addToCart('Peluche de Toro Rojo', 50.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/funko.jpeg" alt="Peluche de Toro Rojo">
+            <h2>Funko de Toro Rojo</h2>
+            <p class="price">16.50 €</p>
+            <button onclick="addToCart('Funko de Toro Rojo', 16.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/action.jpeg" alt="Producto 2">
+            <h2>Set Figuras de Acción Paseo En El Parque</h2>
+            <p class="price">30.00 €</p>
+            <button onclick="addToCart('Set Figuras de Acción Paseo En El Parque', 30.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/action2.jpeg" alt="Producto 2">
+            <h2>Set Figuras de Acción Noche En El Casino</h2>
+            <p class="price">35.00 €</p>
+            <button onclick="addToCart('Set Figuras de Acción Paseo En El Parque', 35.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/action3.jpeg" alt="Producto 2">
+            <h2>Set Figuras de Acción Viaje a Ibiza</h2>
+            <p class="price">33.00 €</p>
+            <button onclick="addToCart('Set Figuras de Acción Viaje a Ibiza', 33.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/action4.jpeg" alt="Producto 2">
+            <h2>Set Figuras de Acción Barbacoa</h2>
+            <p class="price">37.50 €</p>
+            <button onclick="addToCart('Set Figuras de Acción Barbacoa', 37.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/action5.jpeg" alt="Producto 2">
+            <h2>Set Figuras de Acción Vengo En Pole</h2>
+            <p class="price">40.99 €</p>
+            <button onclick="addToCart('Set Figuras de Acción Vengo En Pole', 40.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/action6.jpeg" alt="Producto 2">
+            <h2>Set Figuras de Acción Día de Playa</h2>
+            <p class="price">42.99 €</p>
+            <button onclick="addToCart('Set Figuras de Acción Día de Playa', 42.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/lego.jpeg" alt="Producto 2">
+            <h2>Lego Toro Rojo en la Disco</h2>
+            <p class="price">43.50 €</p>
+            <button onclick="addToCart('Lego Toro Rojo en la Disco', 43.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/lego2.jpeg" alt="Producto 2">
+            <h2>Lego Toro Rojo Futbol</h2>
+            <p class="price">47.50 €</p>
+            <button onclick="addToCart('Lego Toro Rojo Futbol', 47.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/lego3.jpeg" alt="Producto 2">
+            <h2>Lego Toro Rojo Excursión a Asturias</h2>
+            <p class="price">47.50 €</p>
+            <button onclick="addToCart('Lego Toro Rojo Excursión a Asturias', 47.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/doll.jpeg" alt="Producto 2">
+            <h2>Set muñecas Toro Rojo y Acompañante</h2>
+            <p class="price">59.50 €</p>
+            <button onclick="addToCart('Set muñecas Toro Rojo y Acompañante', 59.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/ps4.jpeg" alt="Producto 2">
+            <h2>Grand Theft Auto: Toro Rojo</h2>
+            <p class="price">67.50 €</p>
+            <button onclick="addToCart('Grand Theft Auto: Toro Rojo', 67.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/sims.jpeg" alt="Producto 2">
+            <h2>Los Sims 4 Expansión: Sé Toro Rojo</h2>
+            <p class="price">59.99 €</p>
+            <button onclick="addToCart('Los Sims 4 Expansión: Sé Toro Rojo', 59.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cod.jpeg" alt="Producto 2">
+            <h2>Call Of Duty: Toro Rojo</h2>
+            <p class="price">59.99 €</p>
+            <button onclick="addToCart('Call Of Duty: Toro Rojo', 59.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/monopoly.jpeg" alt="Producto 2">
+            <h2>Monopoly Toro Rojo</h2>
+            <p class="price">39.99 €</p>
+            <button onclick="addToCart('Monopoly Toro Rojo', 39.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/poker2.jpeg" alt="Producto 2">
+            <h2>Baraja de Póker Toro Rojo</h2>
+            <p class="price">9.99 €</p>
+            <button onclick="addToCart('Baraja de Póker Toro Rojo', 9.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/furby.jpeg" alt="Producto 2">
+            <h2>Furby Toro Rojo</h2>
+            <p class="price">39.99 €</p>
+            <button onclick="addToCart('Furby Toro Rojo', 39.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/almohada.jpeg" alt="Producto 2">
+            <h2>Almohada Toro Rojo</h2>
+            <p class="price">13.00 €</p>
+            <button onclick="addToCart('Almohada Toro Rojo', 13.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/iman.jpeg" alt="Producto 2">
+            <h2>Imán Toro Rojo</h2>
+            <p class="price">4.99 €</p>
+            <button onclick="addToCart('Imán Toro Rojo', 4.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/llavero.jpeg" alt="Producto 2">
+            <h2>Llavero Toro Rojo</h2>
+            <p class="price">4.99 €</p>
+            <button onclick="addToCart('Llavero Toro Rojo', 5.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/maleta.jpeg" alt="Producto 2">
+            <h2>Maleta Toro Rojo</h2>
+            <p class="price">75.50 €</p>
+            <button onclick="addToCart('Maleta Toro Rojo', 75.50)">Agregar al carrito</button>
+        </article>
+
+
+    </section>
+
+    <section id="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items">
+            <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
+        </ul>
+        <p id="total">Total: $0.00</p>
+    </section>
+
+    <script src="shop.js"></script>
+</body>
+</html>
