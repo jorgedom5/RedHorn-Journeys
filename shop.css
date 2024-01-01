@@ -35,14 +35,22 @@ header {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    background-color: #34495e; /* Nuevo fondo azul oscuro para los productos */
-    border-radius: 10px; /* Nuevos bordes redondeados */
-    color: #d9534f; /* Nuevo color de texto rojo */
+    background-color: #34495e;
+    border-radius: 10px;
+    color: #d9534f;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-out; /* Agregada transición para la escala */
+}
+
+.item:hover {
+    transform: scale(1.1); /* Hace que la imagen se agrande al pasar el ratón */
 }
 
 .item img {
-    width: 200px; /* Establece el ancho deseado de la imagen */
-    height: auto; /* Hace que la altura de la imagen se ajuste automáticamente */
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease-out; /* Agregada transición para la escala */
 }
 
 button {
@@ -107,7 +115,7 @@ nav a:hover {
     background-color: #d9534f;
 }
 
-.description-container2 {
+.description-container {
     border: 2px solid #d9534f;
     padding: 20px;
     margin: 20px 0;
@@ -115,10 +123,40 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.description2 {
+.description {
     max-width: 600px;
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+}
+
+.enlarged-image {
+    width: 100vw; /* Ocupar todo el ancho de la ventana */
+    height: 100vh; /* Ocupar toda la altura de la ventana */
+    object-fit: contain; /* Ajustar la imagen manteniendo la proporción */
+    display: block;
+    margin: auto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 150px;
+    color: white;
+    cursor: pointer;
 }
