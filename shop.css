@@ -116,19 +116,23 @@ nav a:hover {
 }
 
 .description-container {
-    border: 2px solid #d9534f;
+    background-color: #1c2331; /* Fondo azul oscuro */
+    color: white;
     padding: 20px;
-    margin: 20px 0;
-    background-color: white;
-    border-radius: 8px;
+    margin: 10px;
+    border-radius: 10px; /* Bordes redondeados */
 }
 
-.description {
-    max-width: 600px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+.shop-section {
+    background-color: #1c2331; /* Fondo blanco */
+    color: #ffffff; /* Texto azul oscuro */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+.shop-section img {
+    max-width: 50%; /* Establece un ancho máximo del 100% del contenedor */
+    height: auto;    /* Deja que la altura se ajuste automáticamente */
 }
 
 .enlarged-image {
@@ -159,4 +163,20 @@ nav a:hover {
     font-size: 150px;
     color: white;
     cursor: pointer;
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9534f; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    margin-right: 10px; /* Espaciado entre los botones (puedes ajustar según sea necesario) */
+}
+
+/* Cambia el color de fondo cuando se pasa el ratón sobre los botones */
+.styled-button:hover {
+    background-color: #a8110c;
 }

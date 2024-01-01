@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHorn Journeys - Tienda Moda</title>
+    <link rel="stylesheet" href="../shop.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de la Galería">
+        </div>
+        <h1>RedHorn Journeys</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../servicios.html">Destinos</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../testimonios.html">Testimonios</a></li>
+            <li><a href="../about.html">Sobre nosotros</a></li>
+            <li><a href="../game.html">Quiz</a></li>
+            <li><a href="../wally.html">Juego</a></li>
+            <li><a href="../ultimate.html">UltimateBull</a></li>
+            <li><a href="../viciosa.html">Tragaperras</a></li>
+            <li><a href="../shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="goToMainShop()" class="styled-button">Volver a la Tienda Principal</button>
+
+    <section id="shop">
+
+        <article class="item">
+            <img src="./img/gorra.jpeg" alt="Producto 2">
+            <h2>Gorra Toro Rojo</h2>
+            <p class="price">21.99 €</p>
+            <button onclick="addToCart('Gorra Toro Rojo', 21.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/zapatailla.jpeg" alt="Producto 2">
+            <h2>Zapatillas Toro Rojo</h2>
+            <p class="price">104.99 €</p>
+            <button onclick="addToCart('Zapatillas Toro Rojo', 104.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/disfraz.jpeg" alt="Producto 2">
+            <h2>Disfraz Infantil Toro Rojo</h2>
+            <p class="price">49.99 €</p>
+            <button onclick="addToCart('Disfraz Infantil Toro Rojo', 49.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/disfraz2.jpeg" alt="Producto 2">
+            <h2>Disfraz Premium Toro Rojo</h2>
+            <p class="price">69.99 €</p>
+            <button onclick="addToCart('Disfraz Premium Toro Rojo', 69.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/funda.jpeg" alt="Producto 2">
+            <h2>Funda Móvil Toro Rojo</h2>
+            <p class="price">7.50 €</p>
+            <button onclick="addToCart('Funda Móvil Toro Rojo', 7.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/calcetines.jpeg" alt="Producto 2">
+            <h2>Par de Calcetines Toro Rojo</h2>
+            <p class="price">8.50 €</p>
+            <button onclick="addToCart('Par de Calcetines Toro Rojo', 8.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/mochila.jpeg" alt="Producto 2">
+            <h2>Mochila Toro Rojo</h2>
+            <p class="price">64.99 €</p>
+            <button onclick="addToCart('Mochila Toro Rojo', 64.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/maleta.jpeg" alt="Producto 2">
+            <h2>Maleta Toro Rojo</h2>
+            <p class="price">75.50 €</p>
+            <button onclick="addToCart('Maleta Toro Rojo', 75.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/llavero.jpeg" alt="Producto 2">
+            <h2>Llavero Toro Rojo</h2>
+            <p class="price">4.99 €</p>
+            <button onclick="addToCart('Llavero Toro Rojo', 4.99)">Agregar al carrito</button>
+        </article>
+
+    </section>
+
+    <section id="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items">
+            <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
+        </ul>
+        <p id="total">Total: 0.00 €</p>
+    </section>
+
+    <audio id="addToCartSound">
+        <source src="./audio/money.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="../shop.js"></script>
+</body>
+</html>

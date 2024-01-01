@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHorn Journeys - Tienda Cocina y Hogar</title>
+    <link rel="stylesheet" href="../shop.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de la Galería">
+        </div>
+        <h1>RedHorn Journeys</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../servicios.html">Destinos</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../testimonios.html">Testimonios</a></li>
+            <li><a href="../about.html">Sobre nosotros</a></li>
+            <li><a href="../game.html">Quiz</a></li>
+            <li><a href="../wally.html">Juego</a></li>
+            <li><a href="../ultimate.html">UltimateBull</a></li>
+            <li><a href="../viciosa.html">Tragaperras</a></li>
+            <li><a href="../shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="goToMainShop()" class="styled-button">Volver a la Tienda Principal</button>
+
+    <section id="shop">
+
+        <article class="item">
+            <img src="./img/iman.jpeg" alt="Producto 2">
+            <h2>Imán Toro Rojo</h2>
+            <p class="price">4.99 €</p>
+            <button onclick="addToCart('Imán Toro Rojo', 4.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/taza.jpeg" alt="Producto 2">
+            <h2>Taza Toro Rojo</h2>
+            <p class="price">9.95 €</p>
+            <button onclick="addToCart('Taza Toro Rojo', 9.95)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cocina.jpeg" alt="Producto 2">
+            <h2>Kit de Cocina Toro Rojo</h2>
+            <p class="price">149.99 €</p>
+            <button onclick="addToCart('Kit de Cocina Toro Rojo', 149.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/toast.jpeg" alt="Producto 2">
+            <h2>Tostadora Toro Rojo</h2>
+            <p class="price">49.99 €</p>
+            <button onclick="addToCart('Tostadora Toro Rojo', 49.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/airfryer.jpeg" alt="Producto 2">
+            <h2>Air Fryer Toro Rojo</h2>
+            <p class="price">199.99 €</p>
+            <button onclick="addToCart('Tostadora Toro Rojo', 199.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cafe.jpeg" alt="Producto 2">
+            <h2>Cafetera Toro Rojo</h2>
+            <p class="price">319.99 €</p>
+            <button onclick="addToCart('Cafetera Toro Rojo', 319.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/tetera.jpeg" alt="Producto 2">
+            <h2>Tetera Toro Rojo</h2>
+            <p class="price">61.99 €</p>
+            <button onclick="addToCart('Tetera Toro Rojo', 61.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/bbq.jpeg" alt="Producto 2">
+            <h2>Barbacoa Toro Rojo</h2>
+            <p class="price">411.99 €</p>
+            <button onclick="addToCart('Barbacoa Toro Rojo', 411.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/pimentero.jpeg" alt="Producto 2">
+            <h2>Pimentero Toro Rojo</h2>
+            <p class="price">3.99 €</p>
+            <button onclick="addToCart('Pimentero Toro Rojo', 3.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/abrelatas.jpeg" alt="Producto 2">
+            <h2>Abrelatas Toro Rojo</h2>
+            <p class="price">2.50 €</p>
+            <button onclick="addToCart('Abrelatas Toro Rojo', 2.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/almohada.jpeg" alt="Producto 2">
+            <h2>Almohada Toro Rojo</h2>
+            <p class="price">13.00 €</p>
+            <button onclick="addToCart('Almohada Toro Rojo', 13.99)">Agregar al carrito</button>
+        </article>
+
+    </section>
+
+    <section id="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items">
+            <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
+        </ul>
+        <p id="total">Total: 0.00 €</p>
+    </section>
+
+    <audio id="addToCartSound">
+        <source src="./audio/money.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="../shop.js"></script>
+</body>
+</html>

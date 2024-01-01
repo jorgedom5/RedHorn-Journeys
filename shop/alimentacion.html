@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHorn Journeys - Tienda Alimentación y Bebidas</title>
+    <link rel="stylesheet" href="../shop.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo de la Galería">
+        </div>
+        <h1>RedHorn Journeys</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../servicios.html">Destinos</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../testimonios.html">Testimonios</a></li>
+            <li><a href="../about.html">Sobre nosotros</a></li>
+            <li><a href="../game.html">Quiz</a></li>
+            <li><a href="../wally.html">Juego</a></li>
+            <li><a href="../ultimate.html">UltimateBull</a></li>
+            <li><a href="../viciosa.html">Tragaperras</a></li>
+            <li><a href="../shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="goToMainShop()" class="styled-button">Volver a la Tienda Principal</button>
+
+    <section id="shop">
+
+        <article class="item">
+            <img src="./img/gominolas.jpeg" alt="Producto 2">
+            <h2>Gominolas Toro Rojo</h2>
+            <p class="price">5.50 €</p>
+            <button onclick="addToCart('Gominolas Toro Rojo', 5.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cookie.jpeg" alt="Producto 2">
+            <h2>Galleta Toro Rojo</h2>
+            <p class="price">4.99 €</p>
+            <button onclick="addToCart('Galleta Toro Rojo', 4.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/tarta.jpeg" alt="Producto 2">
+            <h2>Tarta Toro Rojo</h2>
+            <p class="price">8.99 €</p>
+            <button onclick="addToCart('Tarta Toro Rojo', 8.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cheesecake.jpeg" alt="Producto 2">
+            <h2>Cheesecake Toro Rojo</h2>
+            <p class="price">8.99 €</p>
+            <button onclick="addToCart('Cheesecake Toro Rojo', 9.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cupcake.jpeg" alt="Producto 2">
+            <h2>Cupcake Toro Rojo</h2>
+            <p class="price">4.99 €</p>
+            <button onclick="addToCart('Cupcake Toro Rojo', 4.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/donuts.jpeg" alt="Producto 2">
+            <h2>Donuts Toro Rojo</h2>
+            <p class="price">5.50 €</p>
+            <button onclick="addToCart('Donuts Toro Rojo', 5.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/bombones.jpeg" alt="Producto 2">
+            <h2>Bombones Toro Rojo</h2>
+            <p class="price">14.99 €</p>
+            <button onclick="addToCart('Bombones Toro Rojo', 14.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/chocolate.jpeg" alt="Producto 2">
+            <h2>Tableta Chocolate Toro Rojo</h2>
+            <p class="price">4.55 €</p>
+            <button onclick="addToCart('Tableta Chocolate Toro Rojo', 4.55)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/burger.jpeg" alt="Producto 2">
+            <h2>Hamburguesa Toro Rojo</h2>
+            <p class="price">7.99 €</p>
+            <button onclick="addToCart('Hamburguesa Toro Rojo', 7.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/pizza.jpeg" alt="Producto 2">
+            <h2>Pizza Toro Rojo</h2>
+            <p class="price">9.99 €</p>
+            <button onclick="addToCart('Pizza Toro Rojo', 9.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/chicken.jpeg" alt="Producto 2">
+            <h2>Pollo frito Toro Rojo</h2>
+            <p class="price">9.99 €</p>
+            <button onclick="addToCart('Pollo Frito Toro Rojo', 9.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/waffle.jpeg" alt="Producto 2">
+            <h2>Waffle Toro Rojo</h2>
+            <p class="price">3.99 €</p>
+            <button onclick="addToCart('Waffle Toro Rojo', 3.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/fish.jpeg" alt="Producto 2">
+            <h2>Pescado Frito Toro Rojo</h2>
+            <p class="price">11.99 €</p>
+            <button onclick="addToCart('Pescado Frito Toro Rojo', 11.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/taco.jpeg" alt="Producto 2">
+            <h2>Tacos OMG Toro Rojo</h2>
+            <p class="price">19.99 €</p>
+            <button onclick="addToCart('Tacos OMG Toro Rojo', 19.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/helado.jpeg" alt="Producto 2">
+            <h2>Cono Helado Toro Rojo</h2>
+            <p class="price">3.50 €</p>
+            <button onclick="addToCart('Cono Helado Toro Rojo', 3.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/popcorn.jpeg" alt="Producto 2">
+            <h2>Palomitas Toro Rojo</h2>
+            <p class="price">8.50 €</p>
+            <button onclick="addToCart('Palomitas Toro Rojo', 8.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/pirula.jpeg" alt="Producto 2">
+            <h2>Piruleta Toro Rojo</h2>
+            <p class="price">1.20 €</p>
+            <button onclick="addToCart('Piruleta Toro Rojo', 1.20)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/gelatina.jpeg" alt="Producto 2">
+            <h2>Gelatina Toro Rojo</h2>
+            <p class="price">1.80 €</p>
+            <button onclick="addToCart('Gelatina Toro Rojo', 1.80)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cerveza.jpeg" alt="Producto 2">
+            <h2>Cerveza Toro Rojo</h2>
+            <p class="price">1.83 €</p>
+            <button onclick="addToCart('Cerveza Toro Rojo', 1.83)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/vino.jpeg" alt="Producto 2">
+            <h2>Vino Reserva Toro Rojo</h2>
+            <p class="price">12.50 €</p>
+            <button onclick="addToCart('Vino Reserva Toro Rojo', 12.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/whiskey.jpeg" alt="Producto 2">
+            <h2>Whiskey Toro Rojo</h2>
+            <p class="price">18.50 €</p>
+            <button onclick="addToCart('Whiskey Toro Rojo', 18.50)">Agregar al carrito</button>
+        </article>
+
+    </section>
+
+    <section id="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items">
+            <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
+        </ul>
+        <p id="total">Total: 0.00 €</p>
+    </section>
+
+    <audio id="addToCartSound">
+        <source src="./audio/money.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="../shop.js"></script>
+</body>
+</html>

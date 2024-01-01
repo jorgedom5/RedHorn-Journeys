@@ -23,6 +23,9 @@ function addToCart(productName, productPrice) {
 
     updateCart();
 
+    // Guardar el carrito en localStorage
+    saveCartToLocalStorage();
+
     // Reproducir el sonido al agregar al carrito
     playAddToCartSound();
 }
@@ -37,6 +40,9 @@ function removeFromCart(index) {
     }
 
     updateCart();
+
+    // Guardar el carrito en localStorage
+    saveCartToLocalStorage();
 }
 
 function updateCart() {
@@ -78,9 +84,12 @@ function updateCart() {
     totalElement.textContent = `Total: ${total.toFixed(2)}€`;
 }
 
+// Cargar el carrito desde localStorage al cargar la página
 document.addEventListener('DOMContentLoaded', function() {
+    loadCartFromLocalStorage();
+    updateCart(); // Actualizar la interfaz después de cargar el carrito desde localStorage
+
     const items = document.querySelectorAll('.item');
-    const addToCartButton = document.getElementById('addToCartButton'); // Asegúrate de tener un botón con este ID en tu HTML
 
     items.forEach(item => {
         item.addEventListener('click', function(event) {
@@ -90,51 +99,81 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
 
-    addToCartButton.addEventListener('click', function () {
-        // Agregar al carrito lógica aquí
-        // Puedes usar la función addToCart(productName, productPrice) aquí
+function saveCartToLocalStorage() {
+    // Guardar el carrito y el total en localStorage como cadenas JSON
+    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('total', JSON.stringify(total));
+}
 
-        // Reproducir el sonido al agregar al carrito
-        playAddToCartSound();
+function loadCartFromLocalStorage() {
+    // Cargar el carrito y el total desde localStorage
+    const storedCart = localStorage.getItem('cart');
+    const storedTotal = localStorage.getItem('total');
+
+    if (storedCart) {
+        cart = JSON.parse(storedCart);
+    }
+
+    if (storedTotal) {
+        total = JSON.parse(storedTotal);
+    }
+}
+
+// Restaurar el carrito y el total al cargar la página
+loadCartFromLocalStorage();
+
+// Agregar el evento de clic al botón de "Agregar al carrito"
+const addToCartButton = document.getElementById('addToCartButton'); // Asegúrate de tener un botón con este ID en tu HTML
+addToCartButton.addEventListener('click', function () {
+    // Agregar al carrito lógica aquí
+    // Puedes usar la función addToCart(productName, productPrice) aquí
+
+    // Reproducir el sonido al agregar al carrito
+    playAddToCartSound();
+});
+
+function showModal(item) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+
+    const enlargedImage = item.querySelector('img').cloneNode(true);
+    enlargedImage.classList.add('enlarged-image');
+
+    modalContent.appendChild(enlargedImage);
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+
+    // Cerrar la imagen al hacer clic en cualquier parte del modal
+    modal.addEventListener('click', function() {
+        closeModal();
     });
 
-    function showModal(item) {
-        const modal = document.createElement('div');
-        modal.classList.add('modal');
-
-        const modalContent = document.createElement('div');
-        modalContent.classList.add('modal-content');
-
-        const enlargedImage = item.querySelector('img').cloneNode(true);
-        enlargedImage.classList.add('enlarged-image');
-
-        modalContent.appendChild(enlargedImage);
-        modal.appendChild(modalContent);
-        document.body.appendChild(modal);
-
-        // Cerrar la imagen al hacer clic en cualquier parte del modal
-        modal.addEventListener('click', function() {
+    // Cerrar la imagen al presionar la tecla "Esc"
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
             closeModal();
-        });
-
-        // Cerrar la imagen al presionar la tecla "Esc"
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-
-        // Mostrar la imagen durante 5 segundos (5000 milisegundos)
-        setTimeout(function() {
-            closeModal();
-        }, 7000);
-    }
-
-    function closeModal() {
-        const modal = document.querySelector('.modal');
-        if (modal) {
-            modal.remove();
         }
+    });
+
+    // Mostrar la imagen durante 5 segundos (5000 milisegundos)
+    setTimeout(function() {
+        closeModal();
+    }, 7000);
+}
+
+function closeModal() {
+    const modal = document.querySelector('.modal');
+    if (modal) {
+        modal.remove();
     }
-});
+}
+
+function goToMainShop() {
+    // Redirigir a la tienda principal (ajusta la ruta según tu estructura de carpetas)
+    window.location.href = "../shop.html";
+}
