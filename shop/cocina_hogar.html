@@ -57,6 +57,13 @@
         </article>
 
         <article class="item">
+            <img src="./img/cubiertos.jpeg" alt="Producto 2">
+            <h2>Pack Cubiertos Toro Rojo</h2>
+            <p class="price">2.99 €</p>
+            <button onclick="addToCart('Pack Cubiertos Toro Rojo', 2.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/toast.jpeg" alt="Producto 2">
             <h2>Tostadora Toro Rojo</h2>
             <p class="price">49.99 €</p>
@@ -92,6 +99,13 @@
         </article>
 
         <article class="item">
+            <img src="./img/termo.jpeg" alt="Producto 2">
+            <h2>Termo Toro Rojo</h2>
+            <p class="price">5.99 €</p>
+            <button onclick="addToCart('Termo Toro Rojo', 5.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/pimentero.jpeg" alt="Producto 2">
             <h2>Pimentero Toro Rojo</h2>
             <p class="price">3.99 €</p>
@@ -120,10 +134,45 @@
         </article>
 
         <article class="item">
+            <img src="./img/despertador.jpeg" alt="Producto 2">
+            <h2>Despertador Toro Rojo</h2>
+            <p class="price">7.50 €</p>
+            <button onclick="addToCart('Despertador Toro Rojo', 7.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cortinabano.jpeg" alt="Producto 2">
+            <h2>Juego de Cortinas de Baño Toro Rojo</h2>
+            <p class="price">12.00 €</p>
+            <button onclick="addToCart('Juego de Cortinas de Baño Toro Rojo', 12.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/esponja.jpeg" alt="Producto 2">
+            <h2>Esponja Toro Rojo</h2>
+            <p class="price">3.50 €</p>
+            <button onclick="addToCart('Esponja Toro Rojo', 3.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/relojpared.jpeg" alt="Producto 2">
             <h2>Reloj Páred Toro Rojo</h2>
             <p class="price">43.00 €</p>
             <button onclick="addToCart('Reloj Páred Toro Rojo', 43.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/estanteria.jpeg" alt="Producto 2">
+            <h2>Estantería Toro Rojo</h2>
+            <p class="price">283.00 €</p>
+            <button onclick="addToCart('Estantería Toro Rojo', 283.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/busto.jpeg" alt="Producto 2">
+            <h2>Busto Piedra Toro Rojo</h2>
+            <p class="price">150.00 €</p>
+            <button onclick="addToCart('Busto Piedra Toro Rojo', 150.00)">Agregar al carrito</button>
         </article>
 
         <article class="item">
@@ -140,6 +189,34 @@
             <button onclick="addToCart('Florero Toro Rojo', 44.20)">Agregar al carrito</button>
         </article>
 
+        <article class="item">
+            <img src="./img/sofa.jpeg" alt="Producto 2">
+            <h2>Sofá Toro Rojo</h2>
+            <p class="price">420.00 €</p>
+            <button onclick="addToCart('Sofá Toro Rojo', 420.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/munecoruso.jpeg" alt="Producto 2">
+            <h2>Muñeco Ruso Toro Rojo</h2>
+            <p class="price">20.15 €</p>
+            <button onclick="addToCart('Muñeco Ruso Toro Rojo', 20.15)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/cenicero.jpeg" alt="Producto 2">
+            <h2>Cenicero Toro Rojo</h2>
+            <p class="price">13.99 €</p>
+            <button onclick="addToCart('Cenicero Toro Rojo', 13.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/oro.jpeg" alt="Producto 2">
+            <h2>Moneda de Oro Toro Rojo</h2>
+            <p class="price">299.99 €</p>
+            <button onclick="addToCart('Moneda de Oro Toro Rojo', 299.99)">Agregar al carrito</button>
+        </article>
+
     </section>
 
     <section id="cart">
@@ -148,6 +225,8 @@
             <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
         </ul>
         <p id="total">Total: 0.00 €</p>
+        <button onclick="proceedToPurchase()">Proceder a la compra</button>
+        <button id="clearCartButton" onclick="clearCart()">🗑️</button>
     </section>
 
     <audio id="addToCartSound">

@@ -163,7 +163,7 @@ function showModal(item) {
     // Mostrar la imagen durante 5 segundos (5000 milisegundos)
     setTimeout(function() {
         closeModal();
-    }, 7000);
+    }, 10000);
 }
 
 function closeModal() {
@@ -177,3 +177,92 @@ function goToMainShop() {
     // Redirigir a la tienda principal (ajusta la ruta según tu estructura de carpetas)
     window.location.href = "../shop.html";
 }
+
+
+
+
+function proceedToPurchase() {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    
+    // Definir el tamaño del canvas (ajusta según tus necesidades)
+    const canvasPadding = 20; // Espacio adicional alrededor del contenido
+    const lineHeight = 30; // Altura de cada línea de texto
+    const logoOpacity = 0.5; // Transparencia del logo
+
+    // Calcular la altura del canvas en función del contenido
+    const canvasHeight = 80 + (cart.length + 4) * lineHeight; // 4 líneas adicionales para mensaje y total
+
+    canvas.width = 800;
+    canvas.height = canvasHeight;
+
+    // Dibujar el logo en el fondo con transparencia
+    const logo = new Image();
+    logo.src = './img/logo.png'; // Ajusta la ruta según la ubicación de tu archivo
+    context.globalAlpha = logoOpacity;
+    context.drawImage(logo, 0, 0, canvas.width, canvas.height);
+    context.globalAlpha = 1.0;
+
+    // Dibujar el encabezado
+    context.fillStyle = '#d9534f'; // Color de fondo rojo
+    context.fillRect(0, 0, canvas.width, 80);
+
+    // Dibujar el texto del encabezado
+    context.fillStyle = '#1c2331'; // Color de texto azul oscuro
+    context.font = '24px Arial';
+    context.fillText('RedHorn Journeys - Tienda', canvasPadding, 40);
+
+    // Dibujar la información del carrito en el canvas
+    context.fillStyle = '#1c2331'; // Color de fondo blanco
+    context.fillRect(0, 80, canvas.width, canvas.height - 120);
+
+    context.fillStyle = '#d9534f'; // Color de texto rojo
+    context.font = '20px Arial';
+    let yPos = 110;
+
+    cart.forEach(item => {
+        const text = `${item.name} - ${item.price.toFixed(2)}€ x ${item.quantity}`;
+        context.fillText(text, canvasPadding, yPos);
+        yPos += lineHeight;
+    });
+
+    // Agregar mensaje de agradecimiento
+    context.fillStyle = '#d9534f'; // Color de texto rojo
+    context.font = 'italic 16px Arial';
+    const thankYouText = '¡Muchas gracias por confiar en nosotros, Toro Rojo te lo agradece!';
+    context.fillText(thankYouText, canvasPadding, yPos);
+
+    // Dibujar la cantidad total más grande, alineada a la derecha y en negrita
+    context.font = 'bold 24px Arial';
+    const totalText = `Total: ${total.toFixed(2)}€`;
+    const totalTextWidth = context.measureText(totalText).width;
+    context.fillText(totalText, canvas.width - canvasPadding - totalTextWidth, yPos + 2 * lineHeight);
+
+    // Crear una imagen con el contenido del canvas
+    const image = new Image();
+    image.src = canvas.toDataURL();
+
+    // Crear un enlace para descargar la imagen
+    const downloadLink = document.createElement('a');
+    downloadLink.href = image.src;
+    downloadLink.download = 'ticket_compra.png';
+
+    // Simular un clic en el enlace para iniciar la descarga
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+    // Mostrar la imagen en un modal
+    showModal(image);
+}
+
+function clearCart() {
+    // Limpiar el carrito y actualizar la interfaz
+    cart = [];
+    updateCart();
+
+    // Guardar el carrito vacío en localStorage
+    saveCartToLocalStorage();
+}
+
+

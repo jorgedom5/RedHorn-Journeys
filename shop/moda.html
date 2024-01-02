@@ -43,6 +43,13 @@
         </article>
 
         <article class="item">
+            <img src="./img/jerseyy.jpeg" alt="Producto 2">
+            <h2>Jersey Toro Rojo</h2>
+            <p class="price">61.99 €</p>
+            <button onclick="addToCart('Jersey Toro Rojo', 61.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/zapatailla.jpeg" alt="Producto 2">
             <h2>Zapatillas Toro Rojo</h2>
             <p class="price">104.99 €</p>
@@ -80,8 +87,8 @@
         <article class="item">
             <img src="./img/mask.jpeg" alt="Producto 2">
             <h2>Máscara de Toro Rojo</h2>
-            <p class="price">39.99 €</p>
-            <button onclick="addToCart('Máscara de Toro Rojo', 39.99)">Agregar al carrito</button>
+            <p class="price">19.99 €</p>
+            <button onclick="addToCart('Máscara de Toro Rojo', 19.99)">Agregar al carrito</button>
         </article>
 
         <article class="item">
@@ -96,6 +103,13 @@
             <h2>Par de Calcetines Toro Rojo</h2>
             <p class="price">8.50 €</p>
             <button onclick="addToCart('Par de Calcetines Toro Rojo', 8.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/guantes.jpeg" alt="Producto 2">
+            <h2>Guantes Toro Rojo</h2>
+            <p class="price">6.50 €</p>
+            <button onclick="addToCart('Guantes Toro Rojo', 6.50)">Agregar al carrito</button>
         </article>
 
         <article class="item">
@@ -120,6 +134,13 @@
         </article>
 
         <article class="item">
+            <img src="./img/maletin.jpeg" alt="Producto 2">
+            <h2>Maletín Toro Rojo</h2>
+            <p class="price">45.50 €</p>
+            <button onclick="addToCart('Maletín Toro Rojo', 45.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/bolso.jpeg" alt="Producto 2">
             <h2>Bolso Toro Rojo</h2>
             <p class="price">69.99 €</p>
@@ -140,6 +161,41 @@
             <button onclick="addToCart('Monedero Toro Rojo', 9.99)">Agregar al carrito</button>
         </article>
 
+        <article class="item">
+            <img src="./img/zippo.jpeg" alt="Producto 2">
+            <h2>Zippo Toro Rojo</h2>
+            <p class="price">10.99 €</p>
+            <button onclick="addToCart('Zippo Toro Rojo', 10.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/collar.jpeg" alt="Producto 2">
+            <h2>Collar Toro Rojo</h2>
+            <p class="price">45.27 €</p>
+            <button onclick="addToCart('Collar Toro Rojo', 45.27)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/anillo.jpeg" alt="Producto 2">
+            <h2>Anillo Toro Rojo</h2>
+            <p class="price">34.48 €</p>
+            <button onclick="addToCart('Anillo Toro Rojo', 34.48)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/pulsera.jpeg" alt="Producto 2">
+            <h2>Pulsera Toro Rojo</h2>
+            <p class="price">10.87 €</p>
+            <button onclick="addToCart('Pulsera Toro Rojo', 10.87)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/pendientes.jpeg" alt="Producto 2">
+            <h2>Pendientes Toro Rojo</h2>
+            <p class="price">57.29 €</p>
+            <button onclick="addToCart('Pendientes Toro Rojo', 57.29)">Agregar al carrito</button>
+        </article>
+
     </section>
 
     <section id="cart">
@@ -148,6 +204,8 @@
             <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
         </ul>
         <p id="total">Total: 0.00 €</p>
+        <button onclick="proceedToPurchase()">Proceder a la compra</button>
+        <button id="clearCartButton" onclick="clearCart()">🗑️</button>
     </section>
 
     <audio id="addToCartSound">

@@ -92,6 +92,13 @@
         </article>
 
         <article class="item">
+            <img src="./img/figurachocolate.jpeg" alt="Producto 2">
+            <h2>Figura Chocolate Toro Rojo</h2>
+            <p class="price">25.55 €</p>
+            <button onclick="addToCart('Figura Chocolate Toro Rojo', 25.55)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/burger.jpeg" alt="Producto 2">
             <h2>Hamburguesa Toro Rojo</h2>
             <p class="price">7.99 €</p>
@@ -113,10 +120,31 @@
         </article>
 
         <article class="item">
+            <img src="./img/sandwich.jpeg" alt="Producto 2">
+            <h2>Sandwich Toro Rojo</h2>
+            <p class="price">7.50 €</p>
+            <button onclick="addToCart('Sandwich Toro Rojo', 7.50)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/waffle.jpeg" alt="Producto 2">
             <h2>Waffle Toro Rojo</h2>
             <p class="price">3.99 €</p>
             <button onclick="addToCart('Waffle Toro Rojo', 3.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/sushi.jpeg" alt="Producto 2">
+            <h2>Bandeja Sushi Toro Rojo</h2>
+            <p class="price">23.99 €</p>
+            <button onclick="addToCart('Bandeja Sushi Toro Rojo', 23.99)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/rollitos.jpeg" alt="Producto 2">
+            <h2>Rollitos Primavera Toro Rojo</h2>
+            <p class="price">4.50 €</p>
+            <button onclick="addToCart('Rollitos Primavera Toro Rojo', 4.50)">Agregar al carrito</button>
         </article>
 
         <article class="item">
@@ -134,10 +162,24 @@
         </article>
 
         <article class="item">
+            <img src="./img/kebab.jpeg" alt="Producto 2">
+            <h2>Kebab Toro Rojo</h2>
+            <p class="price">4.00 €</p>
+            <button onclick="addToCart('Kebab Toro Rojo', 4.00)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
             <img src="./img/helado.jpeg" alt="Producto 2">
             <h2>Cono Helado Toro Rojo</h2>
+            <p class="price">3.89 €</p>
+            <button onclick="addToCart('Cono Helado Toro Rojo', 3.89)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/paleta.jpeg" alt="Producto 2">
+            <h2>Paleta Helado Toro Rojo</h2>
             <p class="price">3.50 €</p>
-            <button onclick="addToCart('Cono Helado Toro Rojo', 3.50)">Agregar al carrito</button>
+            <button onclick="addToCart('Paleta Helado Toro Rojo', 3.50)">Agregar al carrito</button>
         </article>
 
         <article class="item">
@@ -182,6 +224,20 @@
             <button onclick="addToCart('Whiskey Toro Rojo', 18.50)">Agregar al carrito</button>
         </article>
 
+        <article class="item">
+            <img src="./img/vodka.jpeg" alt="Producto 2">
+            <h2>Vodka Toro Rojo</h2>
+            <p class="price">9.95 €</p>
+            <button onclick="addToCart('Vodka Toro Rojo', 9.95)">Agregar al carrito</button>
+        </article>
+
+        <article class="item">
+            <img src="./img/ginebra.jpeg" alt="Producto 2">
+            <h2>Ginebra Toro Rojo</h2>
+            <p class="price">23.85 €</p>
+            <button onclick="addToCart('Ginebra Toro Rojo', 23.85)">Agregar al carrito</button>
+        </article>
+
     </section>
 
     <section id="cart">
@@ -190,6 +246,8 @@
             <!-- Los elementos del carrito se agregarán dinámicamente desde JavaScript -->
         </ul>
         <p id="total">Total: 0.00 €</p>
+        <button onclick="proceedToPurchase()">Proceder a la compra</button>
+        <button id="clearCartButton" onclick="clearCart()">🗑️</button>
     </section>
 
     <audio id="addToCartSound">
