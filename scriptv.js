@@ -44,28 +44,32 @@ function spin() {
             
             if (result1 === result2 && result2 === result3 && result3 === "symbol5.jpeg") {
                 // Ganar 20 monedas si aparece el símbolo más inusual en todas las tiradas
-                budget += 20;
-                alert("¡Felicidades! Ganaste 20 monedas.");
+                budget += 30;
+                alert("¡Felicidades! Ganaste 30 monedas.");
             } else if (result1 === result2 && result2 === result3 && result3 === "symbol4.jpeg") {
                 // Ganar 10 monedas si aparece el símbolo 4 en todas las tiradas
-                budget += 10;
-                alert("¡Excelente! Ganaste 10 monedas.");
+                budget += 15;
+                alert("¡Excelente! Ganaste 15 monedas.");
             } else if (result1 === result2 && result2 === result3 && result3 === "symbol3.jpeg") {
                 // Ganar 5 monedas si aparece el símbolo 3 en todas las tiradas
-                budget += 5;
-                alert("¡Excelente! Ganaste 5 monedas.");
+                budget += 6;
+                alert("¡Excelente! Ganaste 6 monedas.");
             } else if (result1 === result2 && result2 === result3 && result3 === "symbol2.jpeg") {
                 // Ganar 3 monedas si aparece el símbolo 2 en todas las tiradas
-                budget += 3;
-                alert("¡Excelente! Ganaste 3 monedas.");
+                budget += 4;
+                alert("¡Excelente! Ganaste 4 monedas.");
             } else if (result1 === result2 && result2 === result3 && result3 === "symbol1.jpeg") {
                 // Ganar 1 moneda si aparece el símbolo 1 en todas las tiradas
-                budget += 1;
-                alert("¡Excelente! Ganaste 1 moneda.");
+                budget += 2;
+                alert("¡Excelente! Ganaste 2 monedas.");
             } else if (result1 === "symbol5.jpeg" && result2 === "symbol5.jpeg") {
                 // Ganar 8 monedas si aparece el símbolo5 dos veces en la tirada
-                budget += 8;
-                alert("¡Increíble! Ganaste 8 monedas por obtener dos veces el símbolo 5.");
+                budget += 10;
+                alert("¡Increíble! Ganaste 10 monedas");
+            } else if (result1 === "symbol2.jpeg" && result2 === "symbol2.jpeg") {
+                // Ganar 8 monedas si aparece el símbolo5 dos veces en la tirada
+                budget += 2;
+                alert("¡Increíble! Ganaste 2 monedas");
             } else {
                 budget -= 1; // Reducir el presupuesto en 1 moneda
             }
@@ -88,7 +92,7 @@ function playSlotSound() {
 
 function getRandomSymbol(symbols) {
     // Probabilidades ajustadas: symbol1 (más común) tiene 40% de probabilidad, symbol5 (más inusual) tiene 10% de probabilidad
-    const probabilities = [0.45, 0.25, 0.15, 0.10, 0.05];
+    const probabilities = [0.5, 0.2, 0.15, 0.10, 0.05];
     const randomNum = Math.random();
     let cumulativeProb = 0;
 

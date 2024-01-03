@@ -184,17 +184,21 @@ function goToMainShop() {
 function proceedToPurchase() {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
-    
+
     // Definir el tamaño del canvas (ajusta según tus necesidades)
     const canvasPadding = 20; // Espacio adicional alrededor del contenido
     const lineHeight = 30; // Altura de cada línea de texto
-    const logoOpacity = 0.5; // Transparencia del logo
+    const logoOpacity = 0.25; // Nueva opacidad del logo
 
     // Calcular la altura del canvas en función del contenido
     const canvasHeight = 80 + (cart.length + 4) * lineHeight; // 4 líneas adicionales para mensaje y total
 
     canvas.width = 800;
     canvas.height = canvasHeight;
+
+    // Dibujar el fondo blanco
+    context.fillStyle = '#1c2331';
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
     // Dibujar el logo en el fondo con transparencia
     const logo = new Image();
