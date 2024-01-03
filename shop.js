@@ -246,6 +246,8 @@ function proceedToPurchase() {
     const image = new Image();
     image.src = canvas.toDataURL();
 
+    canvas.classList.add('purchase-canvas');
+
     // Crear un enlace para descargar la imagen
     const downloadLink = document.createElement('a');
     downloadLink.href = image.src;

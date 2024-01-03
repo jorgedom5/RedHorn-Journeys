@@ -180,3 +180,10 @@ nav a:hover {
 .styled-button:hover {
     background-color: #a8110c;
 }
+
+.purchase-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Asegúrate de que el canvas esté por encima del fondo */
+}
