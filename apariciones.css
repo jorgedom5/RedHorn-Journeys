@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./img/fondo.jpeg') center/cover fixed no-repeat;
+}
+
+header {
+    background-color: #1c2331;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.imagen-section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#imagen {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.info-container {
+    background-color: #d9534f; /* Rojo */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1c2331; /* Azul oscuro */
+    margin: 0;
+    font-size: 50px;
+}
+
+p {
+    color: #1c2331;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#playButton {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 40px; /* Aumenté el tamaño del botón de reproducir */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#playButton:hover {
+    background-color: #1c2331;
+}
+
+#prevButton, #nextButton {
+    margin-top: 10px;
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: #c0392b;
+}
+
+nav {
+    background-color: #1c2331;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #d9534f;
+}
