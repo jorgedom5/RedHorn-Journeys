@@ -15,18 +15,27 @@ header {
     padding: 20px;
     text-align: center;
     width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 100;
+}
+
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .logo-container img {
     width: 100px;
     height: auto;
     margin-right: 10px;
+    animation: rotateAnimation 1.5s ease; /* Animación que dura 1.5 segundos y se ejecuta solo una vez */
 }
 
-h1 {
-    display: inline-block;
-    margin-left: 20px;
-}
 
 #slot-machine {
     margin-top: 50px;
@@ -79,19 +88,18 @@ button:hover {
 }
 
 nav {
-    background-color: #1c2331;
-    width: 100%;
+    overflow: hidden;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 nav li {
     float: left;
+    margin-right: 15px;
 }
 
 nav a {
@@ -100,6 +108,8 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -133,6 +143,10 @@ nav a:hover {
         margin-top: 10px;
         padding: 5px 10px;
     }
+}
+
+.cta-container {
+    margin: 20px 0;
 }
 
 .cta-button {
