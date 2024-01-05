@@ -248,10 +248,16 @@ function proceedToPurchase() {
 
     canvas.classList.add('purchase-canvas');
 
+    // Obtener la marca de tiempo actual en formato YYYYMMDDHHMMSS
+    const timestamp = new Date().toISOString().replace(/[-T:Z.]/g, '');
+
+    // Agregar la marca de tiempo al nombre de la imagen
+    const imageName = `ticket_compra_${timestamp}.png`;
+
     // Crear un enlace para descargar la imagen
     const downloadLink = document.createElement('a');
     downloadLink.href = image.src;
-    downloadLink.download = 'ticket_compra.png';
+    downloadLink.download = imageName;
 
     // Simular un clic en el enlace para iniciar la descarga
     document.body.appendChild(downloadLink);

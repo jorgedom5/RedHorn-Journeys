@@ -205,3 +205,10 @@ nav a:hover {
     left: 0;
     z-index: 999;
 }
+
+.copyright-container-rounded {
+    background-color: #d9534f; /* Color de fondo del contenedor */
+    padding: 15px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+    margin-top: 20px; /* Espaciado superior para separarlo del contenido anterior */
+}
